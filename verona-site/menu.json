@@ -36,7 +36,7 @@
           "fiyat": "315",
           "fiyat_orta": "430",
           "fiyat_buyuk": "575",
-          "gorsel": "",
+          "gorsel": "/resimler/mantarli-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -45,7 +45,7 @@
           "fiyat": "335",
           "fiyat_orta": "475",
           "fiyat_buyuk": "595",
-          "gorsel": "",
+          "gorsel": "/resimler/vejetaryen-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -72,7 +72,7 @@
           "fiyat": "390",
           "fiyat_orta": "545",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "/resimler/akdeniz-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -81,7 +81,7 @@
           "fiyat": "390",
           "fiyat_orta": "545",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "/resimler/napolitan-pizza.jpg",
           "one_cikan": false
         },
         {
