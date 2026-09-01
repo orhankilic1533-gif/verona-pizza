@@ -2,9 +2,9 @@ backend:
   name: git-gateway
   branch: main
 
-# Panelden yüklenen fotoğraflar buraya kaydedilir
-media_folder: "resimler"
-public_folder: "resimler"
+# Dosyalar verona-site alt klasöründe olduğu için yollar oraya göre
+media_folder: "verona-site/resimler"
+public_folder: "/resimler"
 
 locale: "tr"
 
@@ -14,7 +14,7 @@ collections:
     files:
       - name: "menu"
         label: "Menü (Kategoriler ve Ürünler)"
-        file: "menu.json"
+        file: "verona-site/menu.json"
         description: "Ürün eklemek, silmek veya fiyat değiştirmek için buradan düzenleyin."
         fields:
           - name: "kategoriler"
@@ -30,11 +30,11 @@ collections:
                 label: "Ürünler"
                 label_singular: "Ürün"
                 widget: "list"
-                summary: "{{fields.ad}} — {{fields.fiyat}} ₺"
+                summary: "{{fields.ad}} — {{fields.fiyat}} TL"
                 fields:
                   - { name: "ad", label: "Ürün Adı", widget: "string" }
                   - { name: "aciklama", label: "Açıklama / İçindekiler", widget: "text", required: false }
-                  - { name: "fiyat", label: "Fiyat (₺)  ·  pizzada KÜÇÜK boy", widget: "string" }
+                  - { name: "fiyat", label: "Fiyat (TL) - pizzada KÜÇÜK boy", widget: "string" }
                   - { name: "fiyat_orta", label: "Orta Boy Fiyatı (sadece pizza)", widget: "string", required: false }
                   - { name: "fiyat_buyuk", label: "Büyük Boy Fiyatı (sadece pizza)", widget: "string", required: false }
                   - { name: "gorsel", label: "Ürün Fotoğrafı (isteğe bağlı)", widget: "image", required: false }
