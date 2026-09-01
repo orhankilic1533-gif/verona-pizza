@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verona Pizza · Menü</title>
+<meta name="description" content="Verona Pizza Lüleburgaz — dijital menü ve fiyat listesi.">
+<style>
+  :root{
+    --bg:#141210;
+    --card:#1e1a17;
+    --card-hi:#26211d;
+    --line:#332c26;
+    --cream:#f4ede1;
+    --muted:#a89986;
+    --red:#c8362f;
+    --red-dark:#9e2a25;
+    --green:#3d7a4e;
+    --gold:#d8a53d;
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:90px;
+  }
+
+  /* HERO */
+  .hero{
+    position:relative;
+    padding:34px 20px 26px;
+    text-align:center;
+    background:
+      radial-gradient(120% 90% at 50% 0%, #2a231d 0%, var(--bg) 70%);
+    border-bottom:1px solid var(--line);
+  }
+  .logo{
+    width:92px;height:92px;border-radius:50%;
+    margin:0 auto 14px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,#2b2420,#1a1613);
+    border:2px solid var(--gold);
+    box-shadow:0 8px 30px rgba(0,0,0,.5);
+    overflow:hidden;
+  }
+  .logo span{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);text-transform:uppercase;flex-direction:column;align-items:center;justify-content:center}
+  .logo img{width:100%;height:100%;object-fit:cover}
+  .logo span small{display:block;font-size:9px;color:var(--cream);letter-spacing:3px;font-weight:600}
+  h1{
+    font-size:31px;font-weight:800;letter-spacing:.5px;
+    text-transform:uppercase;
+  }
+  h1 .pz{color:var(--red)}
+  .tagline{color:var(--muted);font-size:13px;margin-top:5px;letter-spacing:.5px}
+  .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .badge{
+    font-size:11.5px;padding:6px 12px;border-radius:999px;
+    background:var(--card);border:1px solid var(--line);color:var(--cream);
+    display:inline-flex;align-items:center;gap:5px;
+  }
+  .badge.rate{color:var(--gold);border-color:rgba(216,165,61,.4)}
+  .badge.free{color:#69c084;border-color:rgba(61,122,78,.5)}
+
+  /* SEARCH */
+  .search-wrap{padding:16px 16px 4px;position:sticky;top:0;z-index:30;background:var(--bg)}
+  .search{
+    display:flex;align-items:center;gap:9px;
+    background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:11px 14px;
+  }
+  .search svg{flex:none;opacity:.6}
+  .search input{
+    background:none;border:none;outline:none;color:var(--cream);
+    font-size:15px;width:100%;
+  }
+  .search input::placeholder{color:var(--muted)}
+
+  /* CATEGORY NAV */
+  nav.cats{
+    position:sticky;top:66px;z-index:29;
+    background:var(--bg);
+    padding:8px 0 10px;
+    border-bottom:1px solid var(--line);
+  }
+  .cats-scroll{
+    display:flex;gap:8px;overflow-x:auto;padding:0 16px;
+    scrollbar-width:none;
+  }
+  .cats-scroll::-webkit-scrollbar{display:none}
+  .cats-scroll button{
+    flex:none;
+    background:var(--card);border:1px solid var(--line);
+    color:var(--muted);
+    padding:8px 14px;border-radius:999px;
+    font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;
+    transition:background .15s,color .15s,border-color .15s;
+  }
+  .cats-scroll button.active{
+    background:var(--red);color:#fff;border-color:var(--red);
+  }
+
+  /* MENU */
+  main{padding:8px 16px 0;max-width:640px;margin:0 auto}
+  .cat-title{
+    font-size:20px;font-weight:800;
+    margin:26px 0 4px;padding-top:8px;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  .cat-title .count{font-size:12px;color:var(--muted);font-weight:600}
+  .cat-sub{font-size:12.5px;color:var(--muted);margin-bottom:12px}
+
+  .item{
+    display:flex;gap:12px;align-items:center;justify-content:space-between;
+    padding:14px 0;border-bottom:1px solid var(--line);
+  }
+  .item:last-child{border-bottom:none}
+  .item-info{flex:1;min-width:0}
+  .item-name{font-size:15.5px;font-weight:700;letter-spacing:.2px}
+  .item-desc{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+  .item-price{
+    flex:none;font-size:15px;font-weight:800;color:var(--gold);
+    white-space:nowrap;padding-left:4px;
+  }
+
+  .noresult{text-align:center;color:var(--muted);padding:50px 20px;display:none}
+
+  /* FEATURED (öne çıkanlar) */
+  .featured{padding:4px 0 6px}
+  .featured h2{
+    font-size:18px;font-weight:800;margin:18px 0 12px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .feat-scroll{
+    display:flex;gap:12px;overflow-x:auto;padding:2px 2px 8px;
+    scrollbar-width:none;scroll-snap-type:x mandatory;
+  }
+  .feat-scroll::-webkit-scrollbar{display:none}
+  .feat-card{
+    flex:none;width:156px;scroll-snap-align:start;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;
+  }
+  .feat-card img{width:100%;height:120px;object-fit:cover;display:block;background:#241f1b}
+  .feat-body{padding:9px 10px 11px}
+  .feat-name{font-size:13px;font-weight:700;line-height:1.25}
+  .feat-price{font-size:13px;font-weight:800;color:var(--gold);margin-top:5px}
+
+  /* item içi küçük görsel */
+  .item-thumb{
+    width:56px;height:56px;border-radius:9px;object-fit:cover;flex:none;
+    background:#241f1b;border:1px solid var(--line);
+  }
+
+  /* PIZZA — boy fiyatları yan yana */
+  .size-head{
+    display:flex;gap:8px;justify-content:flex-end;
+    padding:6px 0 8px;position:sticky;top:112px;z-index:20;background:var(--bg);
+  }
+  .size-head span{
+    width:64px;text-align:center;font-size:10.5px;font-weight:700;
+    color:var(--muted);text-transform:uppercase;letter-spacing:.5px;line-height:1.2;
+  }
+  .pitem{
+    display:flex;gap:10px;align-items:center;
+    padding:12px 0;border-bottom:1px solid var(--line);
+  }
+  .pitem:last-child{border-bottom:none}
+  .pitem .item-info{flex:1;min-width:0}
+  .pitem .prices{display:flex;gap:8px;flex:none}
+  .pitem .prices .p{
+    width:64px;text-align:center;font-size:13.5px;font-weight:800;color:var(--gold);
+  }
+  .pitem .prices .p.empty{color:var(--line)}
+  @media(max-width:380px){
+    .size-head span,.pitem .prices .p{width:52px;font-size:12px}
+  }
+
+  /* FOOTER BAR */
+  .actionbar{
+    position:fixed;left:0;right:0;bottom:0;z-index:40;
+    display:flex;gap:8px;padding:12px 14px;
+    background:linear-gradient(0deg,var(--bg) 70%,transparent);
+    max-width:640px;margin:0 auto;
+  }
+  .actionbar a{
+    flex:1;text-decoration:none;text-align:center;
+    padding:13px 6px;border-radius:12px;
+    font-size:13.5px;font-weight:700;
+    display:flex;flex-direction:column;align-items:center;gap:4px;
+    border:1px solid var(--line);
+    color:var(--cream);background:var(--card);
+  }
+  .actionbar a.call{background:var(--red);border-color:var(--red);color:#fff}
+  .actionbar a.wa{background:#1f7a44;border-color:#1f7a44;color:#fff}
+  .actionbar a.ig{background:linear-gradient(135deg,#833ab4,#c13584,#e1306c,#fd1d1d);border:none;color:#fff}
+  .actionbar a.rev{background:#1a73e8;border-color:#1a73e8;color:#fff}
+  .actionbar a svg{width:19px;height:19px}
+
+  footer.info{
+    text-align:center;padding:26px 20px 10px;color:var(--muted);font-size:12px;
+    border-top:1px solid var(--line);margin-top:30px;
+  }
+  footer.info a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="logo"><img src="resimler/verona-logo.jpg" alt="Verona Pizza" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none">VERONA<small>PIZZA</small></span></div>
+    <h1>Verona <span class="pz">Pizza</span></h1>
+    <p class="tagline">Lüleburgaz'ın en iyi pizzacısı</p>
+  </header>
+
+  <div class="search-wrap">
+    <div class="search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+      <input id="search" type="text" placeholder="Menüde ara… (ör. dört peynirli)" autocomplete="off">
+    </div>
+  </div>
+
+  <section class="featured" id="featured" style="max-width:640px;margin:0 auto;padding-left:16px;padding-right:16px">
+    <h2>🔥 Öne Çıkanlar</h2>
+    <div class="feat-scroll" id="featScroll"></div>
+  </section>
+
+  <nav class="cats"><div class="cats-scroll" id="catnav"></div></nav>
+
+  <main id="menu"></main>
+  <div class="noresult" id="noresult">Aradığınız ürün bulunamadı.</div>
+
+  <footer class="info">
+    Zafer Mah. Eski Bedir Cd. No:92, Lüleburgaz / Kırklareli<br>
+    Fiyatlar değişebilir. · Verona Pizza © 2025
+  </footer>
+
+  <div class="actionbar">
+    <a class="ig" href="https://instagram.com/verona.pizzaa" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a class="rev" href="https://search.google.com/local/writereview?placeid=ChIJG_Kw0HWltRQRUCPo5XTMXyQ" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.8 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8z"/></svg>
+      Google'da Yorum Yap
+    </a>
+  </div>
+
+<script>
+const MENU = [
+ {cat:"Sandviçler", sub:"", items:[
+   ["Patso Sandviç","170","Patates kızartması, ketçap, mayonez"],
+ ]},
+ {cat:"Pizzalar", sub:"Küçük 30cm · Orta 36cm · Büyük 42cm", type:"pizza", items:[
+   ["Margherita Pizza","Domates sos, mozzarella peyniri","315","420","555"],
+   ["Mantarlı Pizza","Domates sos, mozzarella peyniri, mantar","315","430","575"],
+   ["Vejetaryen Pizza","Mantar, mısır, domates, zeytin, yeşil & kırmızıbiber","335","475","595"],
+   ["Bambino Pizza","Sosis, mısır, zeytin","340","490","715"],
+   ["Totti Pizza","Sucuk, sosis, mantar, mısır","375","495","760"],
+   ["Akdeniz Pizza","Domates, zeytin, peynir topları, parmesan, zeytinyağı","390","545","735"],
+   ["Napolitan Pizza","Domates, zeytin, mantar, parmesan peyniri","390","545","735"],
+   ["Sezar Pizza","Izgara tavuk, mantar, domates, yeşil & kırmızıbiber","390","520","735"],
+   ["Pollo Piccante Pizza","Izgara tavuk, biber, soğan, taco sos","390","520","735"],
+   ["Vitello Pizza","Kasap sucuk, domates, yeşil & kırmızıbiber","390","520","735"],
+   ["Pepperoni Pizza","Kasap sucuk, mantar, turşu biberi","390","520","735"],
+   ["Dört Peynirli Pizza","Peynir topları, rokfor, parmesan, pesto sos","395","595","795"],
+   ["Al Capone Pizza","Domates sos, mozzarella, sucuk","395","525","735"],
+   ["Ton Balıklı Pizza","Ton balığı, mantar, mısır, soğan, roka, limon","395","560","770"],
+   ["Romano Pizza","Dana jambon, roka, parmesan, zeytinyağı, pesto sos","395","545","750"],
+   ["Sosisli Pizza","Jülyen sosis, cheddar peyniri, hardal","395","545","750"],
+   ["Milano Pizza","Sucuk, mantar, domates, mısır, kekik","410","525","760"],
+   ["Karışık Pizza","Sucuk, salam, mantar, domates, zeytin, mısır","410","525","760"],
+   ["Trieste Pizza","Sosis, pastırma, mantar, roka, zeytinyağı","415","580","795"],
+   ["Bianco Pizza","Et döner, soğan, biber, marul, sarımsak sos","425","590","820"],
+   ["Mexican Pizza","Et döner, jalapeno biber, taco sos","425","590","820"],
+   ["Et Dönerli Pizza","Et döner, mantar, domates, yeşil biber, soğan","425","590","820"],
+   ["Salsa Pizza","Et döner, mantar, jalapeno, soğan, marul, sarımsak sos","425","590","820"],
+   ["Kavurmalı Pizza","Domates sos, mozzarella, kavurma","450","645","915"],
+   ["BBQ Pizza","Izgara tavuk, kavurma, mantar, barbekü sos","450","645","915"],
+   ["Cornoso Pizza","Kavurma, et döner, mantar, soğan, mısır","475","660","945"],
+   ["Capiano Pizza","Kavurma, pastırma, kapya biber turşusu","475","660","950"],
+   ["Alberto Pizza","Sucuk, kavurma, pastırma","475","660","950"],
+   ["Füme Kaburga Pizza","Füme kaburga, roka, parmesan peyniri","490","715","910"],
+   ["Carlone Pizza","Sucuk, kavurma, pastırma, domates, peynir topları, roka, parmesan","530","740","1.050"],
+   ["Şarküteri Pizza","Sucuk, salam, sosis, kavurma, pastırma, zeytin, mısır","530","740","1.050"],
+ ]},
+ {cat:"Wraps", sub:"", items:[
+   ["Tavuklu Wrap","275","Izgara tavuk, marul, cherry domates, turşu, sarımsak sos, mısır"],
+   ["Çıtır Tavuklu Wrap","280","Çıtır tavuk, marul, cherry domates, turşu, sarımsak sos, mısır"],
+   ["Et Dönerli Wrap","300","Et döner, marul, cherry domates, turşu, soğan, sarımsak sos"],
+ ]},
+ {cat:"Makarnalar", sub:"", items:[
+   ["Sebzeli Spaghetti","280","Mantar, domates, biber, sarımsak, domates sos, parmesan"],
+   ["Pesto Soslu Penne","280","Pesto sos, parmesan peyniri, krema"],
+   ["Pollo Spaghetti","325","Tavuk, mantar, krema, parmesan peyniri"],
+   ["Spaghetti Bolonez","325","Kıyma, bolonez sos, parmesan peyniri"],
+   ["Körili Penne","325","Tavuk, köri, krema, kırmızı & yeşil biber"],
+   ["Spaghetti Carbonara","325","Parmesan, soğan, krema, yumurta, karabiber"],
+   ["Parmesanlı Tagliatelle","400","Tagliatelle, parmesan peyniri"],
+ ]},
+ {cat:"Burgerler", sub:"", items:[
+   ["Çıtır Burger","320","130 gr çıtır tavuk pane, marul, domates, turşu, özel sos"],
+ ]},
+ {cat:"Tavuklar", sub:"Salata ve makarna ile", items:[
+   ["Köri Soslu Tavuk","420","200 gr marine tavuk, köri, krema, mantar, biber"],
+   ["Acı Soslu Tavuk","420","200 gr marine tavuk, mantar, biber, sriracha sos"],
+   ["Barbekü Soslu Tavuk","420","200 gr marine tavuk, mantar, biber, barbekü sos"],
+   ["Wok Tavuk","420","200 gr marine tavuk, mantar, biber, soğan, sweet chili sos"],
+   ["Sarımsak Soslu Tavuk","420","200 gr marine tavuk, mantar, biber, soğan, sarımsak sos"],
+ ]},
+ {cat:"Diğer Lezzetler", sub:"", items:[
+   ["Tavuk Pita","335","1 kişilik"],
+   ["Döner Pita","355","1 kişilik servis edilir"],
+ ]},
+ {cat:"Yan Ürünler", sub:"", items:[
+   ["Soğan Halkası","115","6 adet"],
+   ["Nugget","125","6 adet"],
+   ["Mozzarella Sticks","150","6 adet"],
+   ["Patates Kızartması","185","Dilim patates kızartması"],
+   ["Elma Dilim Patates","210","Elma dilim patates kızartması"],
+   ["Kaşık Patates Kızartması","210","Tek kişilik"],
+   ["Çıtır Tavuk Parçaları","230","Tek kişilik"],
+   ["Çıtır Sepet","290","Patates, 4 nugget, 4 soğan halkası, 4 mozzarella sticks"],
+ ]},
+ {cat:"Salatalar", sub:"", items:[
+   ["Sezar Salata","340","Izgara tavuk, marul, cherry domates, salatalık, zeytin, mısır, parmesan"],
+   ["Ton Balıklı Salata","340","Ton balığı, marul, cherry domates, salatalık, lahana, soğan, dereotu, mısır"],
+   ["Akdeniz Salata","340","Marul, cherry domates, havuç, salatalık, lahana, peynir topları, zeytin, mısır"],
+   ["Çıtır Tavuklu Salata","340","Çıtır tavuk, marul, cherry domates, salatalık, havuç, mısır"],
+ ]},
+ {cat:"Tatlılar", sub:"", items:[
+   ["Çikolatalı Calzone (Küçük)","210","Nutella, marshmallow, fındık, ceviz, fıstık, karamel sos"],
+   ["Sufle","220","1 kişilik servis edilir"],
+   ["Çikolatalı Calzone (Büyük)","275","Nutella, marshmallow, fındık, ceviz, fıstık, karamel sos"],
+ ]},
+ {cat:"İçecekler", sub:"", items:[
+   ["Su (50 cl)","30","Pet şişe"],
+   ["Soda (20 cl)","35","Cam şişe"],
+   ["Ayran (20 cl)","40","Küçük boy"],
+   ["Ayran (30 cl)","60","Büyük boy"],
+   ["Coca-Cola (33 cl)","80","Kutu içecek"],
+   ["Coca-Cola Zero (33 cl)","80","Kutu içecek"],
+   ["Fanta (33 cl)","80","Kutu içecek"],
+   ["Sprite (33 cl)","80","Kutu içecek"],
+   ["Fuse Tea (33 cl)","80","Kutu içecek"],
+   ["Ayran (1 L)","130","Pet şişe"],
+   ["Coca-Cola (1 L)","165","Pet şişe"],
+   ["Coca-Cola Zero (1 L)","165","Pet şişe"],
+ ]},
+ {cat:"Soslar", sub:"", items:[
+   ["Acı Sos","15","Paket olarak servis edilir"],
+   ["BBQ Sos","15","Paket olarak servis edilir"],
+   ["Ekstra Ketçap & Mayonez","30","2'şer adet ketçap, mayonez, pizza baharatı"],
+ ]},
+];
+
+// Görseli olan ürünler: "ÜrünAdı|Kategori" -> dosya adı (resimler/ klasöründe)
+// İşletme sahibi yeni foto eklemek için: resmi resimler/ klasörüne at, buraya bir satır ekle.
+const IMAGES = {
+  "Karışık Pizza|Pizzalar":"karisik-pizza.jpg",
+  "Dört Peynirli Pizza|Pizzalar":"dort-peynirli-pizza.jpg",
+  "Füme Kaburga Pizza|Pizzalar":"fume-kaburga-pizza.jpg",
+  "Çıtır Sepet|Yan Ürünler":"citir-sepet.jpg",
+  "Spaghetti Bolonez|Makarnalar":"spaghetti-bolonez.jpg",
+  "Sezar Salata|Salatalar":"sezar-salata.jpg",
+};
+// Öne çıkanlar şeridinde gösterilecekler (sıra önemli)
+const FEATURED = [
+  ["Karışık Pizza","Pizzalar"],
+  ["Dört Peynirli Pizza","Pizzalar"],
+  ["Füme Kaburga Pizza","Pizzalar"],
+  ["Çıtır Sepet","Yan Ürünler"],
+  ["Spaghetti Bolonez","Makarnalar"],
+  ["Sezar Salata","Salatalar"],
+];
+
+const slug = s => s.toLowerCase()
+  .replaceAll("ı","i").replaceAll("ş","s").replaceAll("ç","c")
+  .replaceAll("ğ","g").replaceAll("ü","u").replaceAll("ö","o")
+  .replace(/[^a-z0-9]+/g,"-");
+
+const menuEl = document.getElementById("menu");
+const navEl = document.getElementById("catnav");
+const noresult = document.getElementById("noresult");
+
+MENU.forEach((c,i)=>{
+  const id = "cat-"+slug(c.cat);
+  const btn = document.createElement("button");
+  btn.textContent = c.cat;
+  btn.dataset.target = id;
+  if(i===0) btn.classList.add("active");
+  navEl.appendChild(btn);
+
+  const sec = document.createElement("section");
+  sec.className = "cat-block";
+  sec.id = id;
+  sec.innerHTML = `<div class="cat-title">${c.cat} <span class="count">${c.items.length}</span></div>`
+    + (c.sub ? `<div class="cat-sub">${c.sub}</div>` : "");
+
+  if(c.type==="pizza"){
+    // boy başlıkları
+    const head=document.createElement("div");
+    head.className="size-head";
+    head.innerHTML=`<span>Küçük<br>30cm</span><span>Orta<br>36cm</span><span>Büyük<br>42cm</span>`;
+    sec.appendChild(head);
+    c.items.forEach(([name,desc,k,o,b])=>{
+      const div=document.createElement("div");
+      div.className="pitem";
+      div.dataset.search=(name+" "+desc).toLowerCase();
+      const imgFile=IMAGES[name+"|"+c.cat];
+      const thumb=imgFile?`<img class="item-thumb" src="resimler/${imgFile}" alt="${name}" loading="lazy">`:"";
+      const cell=v=>`<div class="p${v?"":" empty"}">${v?v+" ₺":"–"}</div>`;
+      div.innerHTML=`${thumb}<div class="item-info">
+          <div class="item-name">${name}</div>
+          ${desc?`<div class="item-desc">${desc}</div>`:""}
+        </div>
+        <div class="prices">${cell(k)}${cell(o)}${cell(b)}</div>`;
+      sec.appendChild(div);
+    });
+    menuEl.appendChild(sec);
+    return;
+  }
+
+  c.items.forEach(([name,price,desc])=>{
+    const div = document.createElement("div");
+    div.className = "item";
+    div.dataset.search = (name+" "+desc).toLowerCase();
+    const imgFile = IMAGES[name+"|"+c.cat];
+    const thumb = imgFile ? `<img class="item-thumb" src="resimler/${imgFile}" alt="${name}" loading="lazy">` : "";
+    div.innerHTML = `${thumb}<div class="item-info">
+        <div class="item-name">${name}</div>
+        ${desc?`<div class="item-desc">${desc}</div>`:""}
+      </div>
+      <div class="item-price">${price} ₺</div>`;
+    sec.appendChild(div);
+  });
+  menuEl.appendChild(sec);
+});
+
+// öne çıkanlar şeridini doldur
+const featScroll = document.getElementById("featScroll");
+const priceOf = (name,cat)=>{
+  const c = MENU.find(x=>x.cat===cat); if(!c) return "";
+  const it = c.items.find(x=>x[0]===name); if(!it) return "";
+  return c.type==="pizza" ? it[2] : it[1];  // pizza: küçük boy fiyatı
+};
+FEATURED.forEach(([name,cat])=>{
+  const file = IMAGES[name+"|"+cat]; if(!file) return;
+  const price = priceOf(name,cat);
+  const c = MENU.find(x=>x.cat===cat);
+  const suffix = (c && c.type==="pizza") ? " ₺'den" : " ₺";
+  const card = document.createElement("div");
+  card.className = "feat-card";
+  card.innerHTML = `<img src="resimler/${file}" alt="${name}" loading="lazy">
+    <div class="feat-body">
+      <div class="feat-name">${name}</div>
+      <div class="feat-price">${price}${suffix}</div>
+    </div>`;
+  card.addEventListener("click",()=>{
+    document.getElementById("cat-"+slug(cat)).scrollIntoView({behavior:"smooth"});
+  });
+  featScroll.appendChild(card);
+});
+if(!featScroll.children.length) document.getElementById("featured").style.display="none";
+
+// category click -> scroll
+navEl.addEventListener("click",e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  document.getElementById(b.dataset.target)
+    .scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+// scroll spy
+const blocks = [...document.querySelectorAll(".cat-block")];
+const navBtns = [...navEl.querySelectorAll("button")];
+const spy = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      const id = en.target.id;
+      navBtns.forEach(b=>b.classList.toggle("active",b.dataset.target===id));
+      const active = navEl.querySelector("button.active");
+      if(active) active.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"});
+    }
+  });
+},{rootMargin:"-45% 0px -50% 0px"});
+blocks.forEach(b=>spy.observe(b));
+
+// search
+const search = document.getElementById("search");
+search.addEventListener("input",()=>{
+  const q = search.value.trim().toLowerCase();
+  let anyGlobal = false;
+  document.querySelectorAll(".cat-block").forEach(sec=>{
+    let any = false;
+    sec.querySelectorAll(".item").forEach(it=>{
+      const match = !q || it.dataset.search.includes(q);
+      it.style.display = match ? "" : "none";
+      if(match) any = true;
+    });
+    sec.style.display = any ? "" : "none";
+    if(any) anyGlobal = true;
+  });
+  noresult.style.display = anyGlobal ? "none" : "block";
+  document.querySelector("nav.cats").style.display = q ? "none" : "";
+});
+</script>
+</body>
+</html>
