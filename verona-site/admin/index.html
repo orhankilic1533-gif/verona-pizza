@@ -9,7 +9,22 @@
 <body>
   <!-- Netlify Identity giriş penceresi -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <!-- Decap CMS (yönetim paneli) -->
+  <script>
+    // Sifre sifirlama / davet token'ini garanti altina al:
+    // Identity yuklenince, URL'de recovery/invite token varsa sifre penceresini ac.
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user){
+        var h = window.location.hash || "";
+        if (!user && (h.indexOf("recovery_token=") !== -1 || h.indexOf("invite_token=") !== -1)) {
+          window.netlifyIdentity.open();
+        }
+      });
+      window.netlifyIdentity.on("login", function(){
+        document.location.href = "/admin/";
+      });
+    }
+  </script>
+  <!-- Decap CMS (yonetim paneli) -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
