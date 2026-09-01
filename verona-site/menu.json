@@ -1,0 +1,808 @@
+{
+  "kategoriler": [
+    {
+      "ad": "Sandviçler",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Patso Sandviç",
+          "aciklama": "Patates kızartması, ketçap, mayonez",
+          "fiyat": "170",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Pizzalar",
+      "alt_baslik": "Küçük 30cm · Orta 36cm · Büyük 42cm",
+      "pizza_mi": true,
+      "urunler": [
+        {
+          "ad": "Margherita Pizza",
+          "aciklama": "Domates sos, mozzarella peyniri",
+          "fiyat": "315",
+          "fiyat_orta": "420",
+          "fiyat_buyuk": "555",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Mantarlı Pizza",
+          "aciklama": "Domates sos, mozzarella peyniri, mantar",
+          "fiyat": "315",
+          "fiyat_orta": "430",
+          "fiyat_buyuk": "575",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Vejetaryen Pizza",
+          "aciklama": "Mantar, mısır, domates, zeytin, yeşil & kırmızıbiber",
+          "fiyat": "335",
+          "fiyat_orta": "475",
+          "fiyat_buyuk": "595",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Bambino Pizza",
+          "aciklama": "Sosis, mısır, zeytin",
+          "fiyat": "340",
+          "fiyat_orta": "490",
+          "fiyat_buyuk": "715",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Totti Pizza",
+          "aciklama": "Sucuk, sosis, mantar, mısır",
+          "fiyat": "375",
+          "fiyat_orta": "495",
+          "fiyat_buyuk": "760",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Akdeniz Pizza",
+          "aciklama": "Domates, zeytin, peynir topları, parmesan, zeytinyağı",
+          "fiyat": "390",
+          "fiyat_orta": "545",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Napolitan Pizza",
+          "aciklama": "Domates, zeytin, mantar, parmesan peyniri",
+          "fiyat": "390",
+          "fiyat_orta": "545",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Sezar Pizza",
+          "aciklama": "Izgara tavuk, mantar, domates, yeşil & kırmızıbiber",
+          "fiyat": "390",
+          "fiyat_orta": "520",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Pollo Piccante Pizza",
+          "aciklama": "Izgara tavuk, biber, soğan, taco sos",
+          "fiyat": "390",
+          "fiyat_orta": "520",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Vitello Pizza",
+          "aciklama": "Kasap sucuk, domates, yeşil & kırmızıbiber",
+          "fiyat": "390",
+          "fiyat_orta": "520",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Pepperoni Pizza",
+          "aciklama": "Kasap sucuk, mantar, turşu biberi",
+          "fiyat": "390",
+          "fiyat_orta": "520",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Dört Peynirli Pizza",
+          "aciklama": "Peynir topları, rokfor, parmesan, pesto sos",
+          "fiyat": "395",
+          "fiyat_orta": "595",
+          "fiyat_buyuk": "795",
+          "gorsel": "resimler/dort-peynirli-pizza.jpg",
+          "one_cikan": true
+        },
+        {
+          "ad": "Al Capone Pizza",
+          "aciklama": "Domates sos, mozzarella, sucuk",
+          "fiyat": "395",
+          "fiyat_orta": "525",
+          "fiyat_buyuk": "735",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Ton Balıklı Pizza",
+          "aciklama": "Ton balığı, mantar, mısır, soğan, roka, limon",
+          "fiyat": "395",
+          "fiyat_orta": "560",
+          "fiyat_buyuk": "770",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Romano Pizza",
+          "aciklama": "Dana jambon, roka, parmesan, zeytinyağı, pesto sos",
+          "fiyat": "395",
+          "fiyat_orta": "545",
+          "fiyat_buyuk": "750",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Sosisli Pizza",
+          "aciklama": "Jülyen sosis, cheddar peyniri, hardal",
+          "fiyat": "395",
+          "fiyat_orta": "545",
+          "fiyat_buyuk": "750",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Milano Pizza",
+          "aciklama": "Sucuk, mantar, domates, mısır, kekik",
+          "fiyat": "410",
+          "fiyat_orta": "525",
+          "fiyat_buyuk": "760",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Karışık Pizza",
+          "aciklama": "Sucuk, salam, mantar, domates, zeytin, mısır",
+          "fiyat": "410",
+          "fiyat_orta": "525",
+          "fiyat_buyuk": "760",
+          "gorsel": "resimler/karisik-pizza.jpg",
+          "one_cikan": true
+        },
+        {
+          "ad": "Trieste Pizza",
+          "aciklama": "Sosis, pastırma, mantar, roka, zeytinyağı",
+          "fiyat": "415",
+          "fiyat_orta": "580",
+          "fiyat_buyuk": "795",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Bianco Pizza",
+          "aciklama": "Et döner, soğan, biber, marul, sarımsak sos",
+          "fiyat": "425",
+          "fiyat_orta": "590",
+          "fiyat_buyuk": "820",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Mexican Pizza",
+          "aciklama": "Et döner, jalapeno biber, taco sos",
+          "fiyat": "425",
+          "fiyat_orta": "590",
+          "fiyat_buyuk": "820",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Et Dönerli Pizza",
+          "aciklama": "Et döner, mantar, domates, yeşil biber, soğan",
+          "fiyat": "425",
+          "fiyat_orta": "590",
+          "fiyat_buyuk": "820",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Salsa Pizza",
+          "aciklama": "Et döner, mantar, jalapeno, soğan, marul, sarımsak sos",
+          "fiyat": "425",
+          "fiyat_orta": "590",
+          "fiyat_buyuk": "820",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Kavurmalı Pizza",
+          "aciklama": "Domates sos, mozzarella, kavurma",
+          "fiyat": "450",
+          "fiyat_orta": "645",
+          "fiyat_buyuk": "915",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "BBQ Pizza",
+          "aciklama": "Izgara tavuk, kavurma, mantar, barbekü sos",
+          "fiyat": "450",
+          "fiyat_orta": "645",
+          "fiyat_buyuk": "915",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Cornoso Pizza",
+          "aciklama": "Kavurma, et döner, mantar, soğan, mısır",
+          "fiyat": "475",
+          "fiyat_orta": "660",
+          "fiyat_buyuk": "945",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Capiano Pizza",
+          "aciklama": "Kavurma, pastırma, kapya biber turşusu",
+          "fiyat": "475",
+          "fiyat_orta": "660",
+          "fiyat_buyuk": "950",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Alberto Pizza",
+          "aciklama": "Sucuk, kavurma, pastırma",
+          "fiyat": "475",
+          "fiyat_orta": "660",
+          "fiyat_buyuk": "950",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Füme Kaburga Pizza",
+          "aciklama": "Füme kaburga, roka, parmesan peyniri",
+          "fiyat": "490",
+          "fiyat_orta": "715",
+          "fiyat_buyuk": "910",
+          "gorsel": "resimler/fume-kaburga-pizza.jpg",
+          "one_cikan": true
+        },
+        {
+          "ad": "Carlone Pizza",
+          "aciklama": "Sucuk, kavurma, pastırma, domates, peynir topları, roka, parmesan",
+          "fiyat": "530",
+          "fiyat_orta": "740",
+          "fiyat_buyuk": "1.050",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Şarküteri Pizza",
+          "aciklama": "Sucuk, salam, sosis, kavurma, pastırma, zeytin, mısır",
+          "fiyat": "530",
+          "fiyat_orta": "740",
+          "fiyat_buyuk": "1.050",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Wraps",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Tavuklu Wrap",
+          "aciklama": "Izgara tavuk, marul, cherry domates, turşu, sarımsak sos, mısır",
+          "fiyat": "275",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Çıtır Tavuklu Wrap",
+          "aciklama": "Çıtır tavuk, marul, cherry domates, turşu, sarımsak sos, mısır",
+          "fiyat": "280",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Et Dönerli Wrap",
+          "aciklama": "Et döner, marul, cherry domates, turşu, soğan, sarımsak sos",
+          "fiyat": "300",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Makarnalar",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Sebzeli Spaghetti",
+          "aciklama": "Mantar, domates, biber, sarımsak, domates sos, parmesan",
+          "fiyat": "280",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Pesto Soslu Penne",
+          "aciklama": "Pesto sos, parmesan peyniri, krema",
+          "fiyat": "280",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Pollo Spaghetti",
+          "aciklama": "Tavuk, mantar, krema, parmesan peyniri",
+          "fiyat": "325",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Spaghetti Bolonez",
+          "aciklama": "Kıyma, bolonez sos, parmesan peyniri",
+          "fiyat": "325",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "resimler/spaghetti-bolonez.jpg",
+          "one_cikan": true
+        },
+        {
+          "ad": "Körili Penne",
+          "aciklama": "Tavuk, köri, krema, kırmızı & yeşil biber",
+          "fiyat": "325",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Spaghetti Carbonara",
+          "aciklama": "Parmesan, soğan, krema, yumurta, karabiber",
+          "fiyat": "325",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Parmesanlı Tagliatelle",
+          "aciklama": "Tagliatelle, parmesan peyniri",
+          "fiyat": "400",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Burgerler",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Çıtır Burger",
+          "aciklama": "130 gr çıtır tavuk pane, marul, domates, turşu, özel sos",
+          "fiyat": "320",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Tavuklar",
+      "alt_baslik": "Salata ve makarna ile",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Köri Soslu Tavuk",
+          "aciklama": "200 gr marine tavuk, köri, krema, mantar, biber",
+          "fiyat": "420",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Acı Soslu Tavuk",
+          "aciklama": "200 gr marine tavuk, mantar, biber, sriracha sos",
+          "fiyat": "420",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Barbekü Soslu Tavuk",
+          "aciklama": "200 gr marine tavuk, mantar, biber, barbekü sos",
+          "fiyat": "420",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Wok Tavuk",
+          "aciklama": "200 gr marine tavuk, mantar, biber, soğan, sweet chili sos",
+          "fiyat": "420",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Sarımsak Soslu Tavuk",
+          "aciklama": "200 gr marine tavuk, mantar, biber, soğan, sarımsak sos",
+          "fiyat": "420",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Diğer Lezzetler",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Tavuk Pita",
+          "aciklama": "1 kişilik",
+          "fiyat": "335",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Döner Pita",
+          "aciklama": "1 kişilik servis edilir",
+          "fiyat": "355",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Yan Ürünler",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Soğan Halkası",
+          "aciklama": "6 adet",
+          "fiyat": "115",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Nugget",
+          "aciklama": "6 adet",
+          "fiyat": "125",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Mozzarella Sticks",
+          "aciklama": "6 adet",
+          "fiyat": "150",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Patates Kızartması",
+          "aciklama": "Dilim patates kızartması",
+          "fiyat": "185",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Elma Dilim Patates",
+          "aciklama": "Elma dilim patates kızartması",
+          "fiyat": "210",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Kaşık Patates Kızartması",
+          "aciklama": "Tek kişilik",
+          "fiyat": "210",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Çıtır Tavuk Parçaları",
+          "aciklama": "Tek kişilik",
+          "fiyat": "230",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Çıtır Sepet",
+          "aciklama": "Patates, 4 nugget, 4 soğan halkası, 4 mozzarella sticks",
+          "fiyat": "290",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "resimler/citir-sepet.jpg",
+          "one_cikan": true
+        }
+      ]
+    },
+    {
+      "ad": "Salatalar",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Sezar Salata",
+          "aciklama": "Izgara tavuk, marul, cherry domates, salatalık, zeytin, mısır, parmesan",
+          "fiyat": "340",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "resimler/sezar-salata.jpg",
+          "one_cikan": true
+        },
+        {
+          "ad": "Ton Balıklı Salata",
+          "aciklama": "Ton balığı, marul, cherry domates, salatalık, lahana, soğan, dereotu, mısır",
+          "fiyat": "340",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Akdeniz Salata",
+          "aciklama": "Marul, cherry domates, havuç, salatalık, lahana, peynir topları, zeytin, mısır",
+          "fiyat": "340",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Çıtır Tavuklu Salata",
+          "aciklama": "Çıtır tavuk, marul, cherry domates, salatalık, havuç, mısır",
+          "fiyat": "340",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Tatlılar",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Çikolatalı Calzone (Küçük)",
+          "aciklama": "Nutella, marshmallow, fındık, ceviz, fıstık, karamel sos",
+          "fiyat": "210",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Sufle",
+          "aciklama": "1 kişilik servis edilir",
+          "fiyat": "220",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Çikolatalı Calzone (Büyük)",
+          "aciklama": "Nutella, marshmallow, fındık, ceviz, fıstık, karamel sos",
+          "fiyat": "275",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "İçecekler",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Su (50 cl)",
+          "aciklama": "Pet şişe",
+          "fiyat": "30",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Soda (20 cl)",
+          "aciklama": "Cam şişe",
+          "fiyat": "35",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Ayran (20 cl)",
+          "aciklama": "Küçük boy",
+          "fiyat": "40",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Ayran (30 cl)",
+          "aciklama": "Büyük boy",
+          "fiyat": "60",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Coca-Cola (33 cl)",
+          "aciklama": "Kutu içecek",
+          "fiyat": "80",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Coca-Cola Zero (33 cl)",
+          "aciklama": "Kutu içecek",
+          "fiyat": "80",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Fanta (33 cl)",
+          "aciklama": "Kutu içecek",
+          "fiyat": "80",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Sprite (33 cl)",
+          "aciklama": "Kutu içecek",
+          "fiyat": "80",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Fuse Tea (33 cl)",
+          "aciklama": "Kutu içecek",
+          "fiyat": "80",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Ayran (1 L)",
+          "aciklama": "Pet şişe",
+          "fiyat": "130",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Coca-Cola (1 L)",
+          "aciklama": "Pet şişe",
+          "fiyat": "165",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Coca-Cola Zero (1 L)",
+          "aciklama": "Pet şişe",
+          "fiyat": "165",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    },
+    {
+      "ad": "Soslar",
+      "alt_baslik": "",
+      "pizza_mi": false,
+      "urunler": [
+        {
+          "ad": "Acı Sos",
+          "aciklama": "Paket olarak servis edilir",
+          "fiyat": "15",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "BBQ Sos",
+          "aciklama": "Paket olarak servis edilir",
+          "fiyat": "15",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        },
+        {
+          "ad": "Ekstra Ketçap & Mayonez",
+          "aciklama": "2'şer adet ketçap, mayonez, pizza baharatı",
+          "fiyat": "30",
+          "fiyat_orta": "",
+          "fiyat_buyuk": "",
+          "gorsel": "",
+          "one_cikan": false
+        }
+      ]
+    }
+  ]
+}
