@@ -11,7 +11,7 @@
           "fiyat": "170",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/patso-sandvic.jpg",
           "one_cikan": false
         }
       ]
@@ -27,7 +27,7 @@
           "fiyat": "315",
           "fiyat_orta": "420",
           "fiyat_buyuk": "555",
-          "gorsel": "/resimler/margherita-pizza.jpg",
+          "gorsel": "resimler/margherita-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -36,7 +36,7 @@
           "fiyat": "315",
           "fiyat_orta": "430",
           "fiyat_buyuk": "575",
-          "gorsel": "/resimler/mantarli-pizza.jpg",
+          "gorsel": "resimler/mantarli-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -45,7 +45,7 @@
           "fiyat": "335",
           "fiyat_orta": "475",
           "fiyat_buyuk": "595",
-          "gorsel": "/resimler/vejetaryen-pizza.jpg",
+          "gorsel": "resimler/vejetaryen-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -54,7 +54,7 @@
           "fiyat": "340",
           "fiyat_orta": "490",
           "fiyat_buyuk": "715",
-          "gorsel": "",
+          "gorsel": "resimler/bambino-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -63,7 +63,7 @@
           "fiyat": "375",
           "fiyat_orta": "495",
           "fiyat_buyuk": "760",
-          "gorsel": "",
+          "gorsel": "resimler/totti-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -72,7 +72,7 @@
           "fiyat": "390",
           "fiyat_orta": "545",
           "fiyat_buyuk": "735",
-          "gorsel": "/resimler/akdeniz-pizza.jpg",
+          "gorsel": "resimler/akdeniz-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -81,7 +81,7 @@
           "fiyat": "390",
           "fiyat_orta": "545",
           "fiyat_buyuk": "735",
-          "gorsel": "/resimler/napolitan-pizza.jpg",
+          "gorsel": "resimler/napolitan-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -90,7 +90,7 @@
           "fiyat": "390",
           "fiyat_orta": "520",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "resimler/sezar-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -99,7 +99,7 @@
           "fiyat": "390",
           "fiyat_orta": "520",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "resimler/pollo-piccante-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -108,7 +108,7 @@
           "fiyat": "390",
           "fiyat_orta": "520",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "resimler/vitello-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -117,7 +117,7 @@
           "fiyat": "390",
           "fiyat_orta": "520",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "resimler/pepperoni-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -135,7 +135,7 @@
           "fiyat": "395",
           "fiyat_orta": "525",
           "fiyat_buyuk": "735",
-          "gorsel": "",
+          "gorsel": "resimler/al-capone-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -144,7 +144,7 @@
           "fiyat": "395",
           "fiyat_orta": "560",
           "fiyat_buyuk": "770",
-          "gorsel": "",
+          "gorsel": "resimler/ton-balikli-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -153,7 +153,7 @@
           "fiyat": "395",
           "fiyat_orta": "545",
           "fiyat_buyuk": "750",
-          "gorsel": "",
+          "gorsel": "resimler/romano-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -162,7 +162,7 @@
           "fiyat": "395",
           "fiyat_orta": "545",
           "fiyat_buyuk": "750",
-          "gorsel": "",
+          "gorsel": "resimler/sosisli-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -171,7 +171,7 @@
           "fiyat": "410",
           "fiyat_orta": "525",
           "fiyat_buyuk": "760",
-          "gorsel": "",
+          "gorsel": "resimler/milano-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -189,7 +189,7 @@
           "fiyat": "415",
           "fiyat_orta": "580",
           "fiyat_buyuk": "795",
-          "gorsel": "",
+          "gorsel": "resimler/trieste-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -198,7 +198,7 @@
           "fiyat": "425",
           "fiyat_orta": "590",
           "fiyat_buyuk": "820",
-          "gorsel": "",
+          "gorsel": "resimler/bianco-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -207,7 +207,7 @@
           "fiyat": "425",
           "fiyat_orta": "590",
           "fiyat_buyuk": "820",
-          "gorsel": "",
+          "gorsel": "resimler/mexican-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -216,7 +216,7 @@
           "fiyat": "425",
           "fiyat_orta": "590",
           "fiyat_buyuk": "820",
-          "gorsel": "",
+          "gorsel": "resimler/et-donerli-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -225,7 +225,7 @@
           "fiyat": "425",
           "fiyat_orta": "590",
           "fiyat_buyuk": "820",
-          "gorsel": "",
+          "gorsel": "resimler/salsa-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -234,7 +234,7 @@
           "fiyat": "450",
           "fiyat_orta": "645",
           "fiyat_buyuk": "915",
-          "gorsel": "",
+          "gorsel": "resimler/kavurmali-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -243,7 +243,7 @@
           "fiyat": "450",
           "fiyat_orta": "645",
           "fiyat_buyuk": "915",
-          "gorsel": "",
+          "gorsel": "resimler/bbq-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -252,7 +252,7 @@
           "fiyat": "475",
           "fiyat_orta": "660",
           "fiyat_buyuk": "945",
-          "gorsel": "",
+          "gorsel": "resimler/cornoso-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -261,7 +261,7 @@
           "fiyat": "475",
           "fiyat_orta": "660",
           "fiyat_buyuk": "950",
-          "gorsel": "",
+          "gorsel": "resimler/capiano-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -270,7 +270,7 @@
           "fiyat": "475",
           "fiyat_orta": "660",
           "fiyat_buyuk": "950",
-          "gorsel": "",
+          "gorsel": "resimler/alberto-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -288,7 +288,7 @@
           "fiyat": "530",
           "fiyat_orta": "740",
           "fiyat_buyuk": "1.050",
-          "gorsel": "",
+          "gorsel": "resimler/carlone-pizza.jpg",
           "one_cikan": false
         },
         {
@@ -297,7 +297,7 @@
           "fiyat": "530",
           "fiyat_orta": "740",
           "fiyat_buyuk": "1.050",
-          "gorsel": "",
+          "gorsel": "resimler/sarkuteri-pizza.jpg",
           "one_cikan": false
         }
       ]
@@ -313,7 +313,7 @@
           "fiyat": "275",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/tavuklu-wrap.jpg",
           "one_cikan": false
         },
         {
@@ -322,7 +322,7 @@
           "fiyat": "280",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/citir-tavuklu-wrap.jpg",
           "one_cikan": false
         },
         {
@@ -331,7 +331,7 @@
           "fiyat": "300",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/et-donerli-wrap.jpg",
           "one_cikan": false
         }
       ]
@@ -347,7 +347,7 @@
           "fiyat": "280",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/sebzeli-spaghetti.jpg",
           "one_cikan": false
         },
         {
@@ -356,7 +356,7 @@
           "fiyat": "280",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/pesto-soslu-penne.jpg",
           "one_cikan": false
         },
         {
@@ -365,7 +365,7 @@
           "fiyat": "325",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/pollo-spaghetti.jpg",
           "one_cikan": false
         },
         {
@@ -374,7 +374,7 @@
           "fiyat": "325",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "resimler/spaghetti-bolonez.jpg",
+          "gorsel": "resimler/spaghetti-bolenez.jpg",
           "one_cikan": true
         },
         {
@@ -383,7 +383,7 @@
           "fiyat": "325",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/korili-penne.jpg",
           "one_cikan": false
         },
         {
@@ -392,7 +392,7 @@
           "fiyat": "325",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/spaghetti-carbonara.jpg",
           "one_cikan": false
         },
         {
@@ -401,7 +401,7 @@
           "fiyat": "400",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/parmesanli-tagliatelle.jpg",
           "one_cikan": false
         }
       ]
@@ -417,7 +417,7 @@
           "fiyat": "320",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/citir-burger.jpg",
           "one_cikan": false
         }
       ]
@@ -433,7 +433,7 @@
           "fiyat": "420",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/kori-soslu-tavuk.jpg",
           "one_cikan": false
         },
         {
@@ -442,7 +442,7 @@
           "fiyat": "420",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/aci-soslu-tavuk.jpg",
           "one_cikan": false
         },
         {
@@ -451,7 +451,7 @@
           "fiyat": "420",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/barbeku-soslu-tavuk.jpg",
           "one_cikan": false
         },
         {
@@ -485,7 +485,7 @@
           "fiyat": "335",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/tavuk-pita.jpg",
           "one_cikan": false
         },
         {
@@ -494,7 +494,7 @@
           "fiyat": "355",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/doner-pita.jpg",
           "one_cikan": false
         }
       ]
@@ -510,7 +510,7 @@
           "fiyat": "115",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/sogan-halkasi.jpg",
           "one_cikan": false
         },
         {
@@ -519,7 +519,7 @@
           "fiyat": "125",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/nugget.jpg",
           "one_cikan": false
         },
         {
@@ -528,7 +528,7 @@
           "fiyat": "150",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/mozzarella-sticks.jpg",
           "one_cikan": false
         },
         {
@@ -537,7 +537,7 @@
           "fiyat": "185",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/patates-kizartmasi.jpg",
           "one_cikan": false
         },
         {
@@ -546,7 +546,7 @@
           "fiyat": "210",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/elma-dilim-patates.jpg",
           "one_cikan": false
         },
         {
@@ -555,7 +555,7 @@
           "fiyat": "210",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/kasik-patates-kizartmasi.jpg",
           "one_cikan": false
         },
         {
@@ -564,7 +564,7 @@
           "fiyat": "230",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/citir-tavuk-parcalari.jpg",
           "one_cikan": false
         },
         {
@@ -598,7 +598,7 @@
           "fiyat": "340",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/ton-balikli-salata.jpg",
           "one_cikan": false
         },
         {
@@ -607,7 +607,7 @@
           "fiyat": "340",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/akdeniz-salata.jpg",
           "one_cikan": false
         },
         {
@@ -616,7 +616,7 @@
           "fiyat": "340",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/citir-tavuklu-salata.jpg",
           "one_cikan": false
         }
       ]
@@ -641,7 +641,7 @@
           "fiyat": "220",
           "fiyat_orta": "",
           "fiyat_buyuk": "",
-          "gorsel": "",
+          "gorsel": "resimler/sufle.jpg",
           "one_cikan": false
         },
         {
