@@ -7,22 +7,25 @@
 <meta name="description" content="Verona Pizza Lüleburgaz — dijital menü ve fiyat listesi.">
 <style>
   :root{
-    --bg:#141210;
-    --card:#1e1a17;
-    --card-hi:#26211d;
-    --line:#332c26;
-    --cream:#f4ede1;
-    --muted:#a89986;
+    --bg:#f7c948;            /* neşeli sarı/hardal zemin */
+    --bg2:#f9d76a;
+    --card:#fffaf0;          /* açık krem kart */
+    --card-hi:#fff5e0;
+    --line:#e8d9b0;
+    --cream:#2a1e12;         /* koyu yazı (açık zeminde okunur) */
+    --muted:#8a7355;
     --red:#c8362f;
     --red-dark:#9e2a25;
     --green:#3d7a4e;
-    --gold:#d8a53d;
+    --gold:#c8871a;          /* koyu altın (açık zeminde görünür) */
     --radius:16px;
   }
   *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html{scroll-behavior:smooth}
   body{
-    background:var(--bg);
+    background-color:var(--bg);
+    background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+CjxnIG9wYWNpdHk9IjAuMTMiPgo8IS0tIGRpbGltIDEgLS0+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLDUwKSByb3RhdGUoLTE1KSI+CiAgPHBhdGggZD0iTTAgMCBMNjAgMTUgTDMwIDc1IFoiIGZpbGw9IiNlOGExM2MiIHN0cm9rZT0iI2M4MzYyZiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHBhdGggZD0iTTAgMCBMNjAgMTUgTDU3IDIxIEw0IDggWiIgZmlsbD0iI2Y0ZDA2YSIvPgogIDwhLS0gYWthbiBwZXluaXIgLS0+CiAgPHBhdGggZD0iTTMwIDc1IHEtMyAxMiAyIDIwIHE0IC02IDYgMiBxMyAtOCA1IDQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y0ZDA2YSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIyMiIgY3k9IjI4IiByPSI1IiBmaWxsPSIjYzgzNjJmIi8+CiAgPGNpcmNsZSBjeD0iMzgiIGN5PSI0MCIgcj0iNCIgZmlsbD0iIzllMmEyNSIvPgogIDxjaXJjbGUgY3g9IjMwIiBjeT0iMjAiIHI9IjMiIGZpbGw9IiMzZDdhNGUiLz4KPC9nPgo8IS0tIGRpbGltIDIgLS0+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2MCwxNTApIHJvdGF0ZSgyNSkiPgogIDxwYXRoIGQ9Ik0wIDAgTDYwIDE1IEwzMCA3NSBaIiBmaWxsPSIjZThhMTNjIiBzdHJva2U9IiNjODM2MmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0wIDAgTDYwIDE1IEw1NyAyMSBMNCA4IFoiIGZpbGw9IiNmNGQwNmEiLz4KICA8cGF0aCBkPSJNMzAgNzUgcS0zIDEyIDIgMjAgcTQgLTYgNiAyIHEzIC04IDUgNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRkMDZhIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjIyIiBjeT0iMjgiIHI9IjUiIGZpbGw9IiNjODM2MmYiLz4KICA8Y2lyY2xlIGN4PSIzOCIgY3k9IjQwIiByPSI0IiBmaWxsPSIjOWUyYTI1Ii8+CiAgPGNpcmNsZSBjeD0iMzAiIGN5PSIyMCIgcj0iMyIgZmlsbD0iIzNkN2E0ZSIvPgo8L2c+CjwhLS0ga8O8w6fDvGsgZGlsaW0ga8O2xZ9lIC0tPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODAsMjApIHJvdGF0ZSgtNDApIHNjYWxlKDAuNykiPgogIDxwYXRoIGQ9Ik0wIDAgTDYwIDE1IEwzMCA3NSBaIiBmaWxsPSIjZThhMTNjIiBzdHJva2U9IiNjODM2MmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjI1IiBjeT0iMzAiIHI9IjUiIGZpbGw9IiNjODM2MmYiLz4KPC9nPgo8L2c+Cjwvc3ZnPg==");
+    background-repeat:repeat;
     color:var(--cream);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     line-height:1.5;
@@ -105,7 +108,7 @@
   }
 
   /* MENU */
-  main{padding:8px 16px 0;max-width:640px;margin:0 auto}
+  main{padding:14px 16px 0;max-width:640px;margin:0 auto;background:rgba(255,250,240,0.72);border-radius:18px 18px 0 0}
   .cat-title{
     font-size:20px;font-weight:800;
     margin:26px 0 4px;padding-top:8px;
